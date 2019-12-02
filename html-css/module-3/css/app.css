@@ -1,43 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 body{
     font-family: 'Playfair Display', serif;
+    margin: 0;
 }
-.max-width {
-    max-width: 1200px;
+.conteiner {
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px ;
     
 }
+
 .main-header{ 
     padding: 15px;
     list-style-type: none;
     text-align: center;
 }
 
+.main-menu{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
 .main-menu-item{
     display: inline-block;
     font-size: 14px;
-    margin-bottom: 54px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-right: 102px;
     color: black;
+    text-transform: uppercase;
 
 }
-.main-menu-item a:hover,
-.main-menu-item a:focus {
-    color: red;
-}
+
+.main-menu-item:last-child{
+    margin-right: 0;
+    }
+a{
+    text-decoration: none;
+}    
+
 .blog{
-    display: inline-block;
     list-style-type: none;
-    margin-left: 150px;
     padding: 0;
     font-size: 0;
 }
 .item{
     display: inline-block;
-    width: 421px;
+    width: 420px;
     margin-right: 60px;
     margin-bottom: 36px;
 }
@@ -45,38 +52,44 @@ body{
 .item:nth-child(2n){
     margin-right: 0;
     }
+    h2 + p{
+        margin: 0;
+    }
 
 .topic{
     font-size: 14px;
     color: grey;
     text-transform: uppercase;
+    margin-bottom: 32px
 }
 
 .item h2{
     font-size: 30px;
     color: #626262;
+    margin-bottom: 44px;
 }
 
-.item p{
+.text{
     font-size: 14px;
     color: #626262;
+    margin-bottom: 140px;
 }
 
-.outer{
-    
-        margin-bottom: 70px;
-        padding: 10px;
+.txt{
+    font-size: 14px;
+    color: #626262;
+    margin-bottom: 58px; 
 }
 
-.inner-box{
-    margin: auto;
-    color: black;
+button{
+    display: block;
+    width: 160px;
+    height: 60px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: transparent;
 }
-
-.more{
-    text-align: center;
-    font-size: 24px;
-    
+.button{
+    padding-bottom: 70px;
 }
-
-
