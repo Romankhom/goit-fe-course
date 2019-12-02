@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+body{
+    font-family: 'Playfair Display', serif;
+}
+.max-width {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px ;
+    
+}
+.main-header{ 
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-menu-item{
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 54px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+
+}
+.main-menu-item a:hover,
+.main-menu-item a:focus {
+    color: red;
+}
+.blog{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 150px;
+    padding: 0;
+    font-size: 0;
+}
+.item{
+    display: inline-block;
+    width: 421px;
+    margin-right: 60px;
+    margin-bottom: 36px;
+}
+
+.item:nth-child(2n){
+    margin-right: 0;
+    }
+
+.topic{
+    font-size: 14px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.item h2{
+    font-size: 30px;
+    color: #626262;
+}
+
+.item p{
+    font-size: 14px;
+    color: #626262;
+}
+
+.outer{
+    
+        margin-bottom: 70px;
+        padding: 10px;
+}
+
+.inner-box{
+    margin: auto;
+    color: black;
+}
+
+.more{
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+
