@@ -3,17 +3,18 @@ body{
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
+
 .conteiner {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .main-header{ 
-    padding: 15px;
+    padding: 76px;
     list-style-type: none;
     text-align: center;
+    margin-bottom: 28px;
 }
 
 .main-menu{
@@ -21,40 +22,48 @@ body{
     padding: 0;
     font-size: 0;
 }
+
 .main-menu-item{
     display: inline-block;
     font-size: 14px;
     margin-right: 102px;
-    color: black;
-    text-transform: uppercase;
-
 }
 
 .main-menu-item:last-child{
     margin-right: 0;
-    }
+}
+
 a{
     text-decoration: none;
-}    
+    text-transform: uppercase;
+    color: #000000;
+}  
 
 .blog{
     list-style-type: none;
     padding: 0;
     font-size: 0;
+    margin: 0;
 }
+
 .item{
     display: inline-block;
     width: 420px;
     margin-right: 60px;
-    margin-bottom: 36px;
+    margin-bottom: 140px;
 }
 
 .item:nth-child(2n){
     margin-right: 0;
-    }
-    h2 + p{
-        margin: 0;
-    }
+}
+
+h2 + p{
+    margin: 0;
+}
+
+.item:nth-last-of-type(-n+2){
+    margin-bottom: 0;
+}
 
 .topic{
     font-size: 14px;
@@ -72,7 +81,6 @@ a{
 .text{
     font-size: 14px;
     color: #626262;
-    margin-bottom: 140px;
 }
 
 .txt{
@@ -90,6 +98,7 @@ button{
     font-size: 20px;
     background-color: transparent;
 }
-.button{
+
+section{
     padding-bottom: 70px;
 }
