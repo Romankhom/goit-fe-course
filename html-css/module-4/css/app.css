@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .container{
     max-width: 1170px;
     margin-left: auto;
@@ -12,12 +13,11 @@
 .menu-section{
     padding: 42px 0;
     margin-bottom: 70px;
+ 
 }
 
-.menu-section nav {display: inline-block;
-}
-.home-logo{
-    vertical-align: middle;
+.home-logo {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
@@ -25,27 +25,28 @@
     font-size: 30px;
     color: black;
     padding-left: 30px;
-    
+        
 }
 
 .logo::first-letter{
     color: rgb(0, 128, 0);
 }
+.logo{
+    float: left;
+}
 
 .menu{
-    display: inline-block;
-    width: 1000px;
+    width: 505px;
     list-style: none;
     font-size: 14px;
-    vertical-align: middle;
-    margin: o;
+    margin-top: 15px;
+    margin-right: 34px;
     padding: 0;
-    text-align: right;
+    float: right;
 }
 
-.menu li {
-    display: inline-block;
-}
+
+
 
 .menu li:not(:last-child){
     margin-right: 34px;
@@ -56,11 +57,27 @@
     color: black;
     text-decoration: none;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
-.menu-item:first-child{
-    color: green;
+.menu li {
+    float: left;
 }
+.menu-item-link{
+    display: block;
+}
+
+.menu-item-link:hover{
+    color: green
+}
+
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
 
 .title {
     color: black;
@@ -81,28 +98,19 @@
       margin: 0 auto 56px;
 }
 
-.galery div{
-    max-width: 254px;
-    
+.galery {
+    max-width: 1136px;
+    margin-left: 31px;
 }
 
-.galery{
-    margin-left: 15px;
-}
-
-.product p{
-    display: inline-block;
+.product{
+    width: 254px;
     font-family: roboto;
     font-size: 18px;
-    color: white;
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 14px;
-    
-
-}
-
-.product :hover + p{
-    background-color: rgb(26, 188, 156);
+    margin-bottom: 30px;
+    text-decoration: none;
 }
 
 .name{
@@ -110,26 +118,35 @@
     width: 200px; height: 40px;
     
 }
+.name,.price{
+    float: left;
+}
+
 
 .price{
     background-color: rgb(140,140,140);
-    width: 50px; height: 40px;
-    text-align: right;
+    width: 54px; height: 40px;
+    text-align: center;
+    
 }
 
 .product{
     float: left;
     margin-right: 30px;
 }
-
+.product:hover > p{
+    background-color: rgb(26, 188, 156);
+}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .product:nth-of-type(n+5){
     margin-bottom: 106px;
 }
+
 
 .news {
     font-family: 'Courier New', Courier, monospace;
@@ -151,6 +168,10 @@
       margin:  0 auto 80px;
 }
 
+.blog{
+    margin-left: 15px;
+}
+
 .blog div{
     max-width: 350px;
 }
@@ -163,13 +184,13 @@
 .header{
     font-size: 18px;
     color: rgb(142, 140, 140);
-    padding: 15px 0;
+    margin-bottom: 16px;
 }
 
 .some_text{
     font-size: 14px;
     color: rgb(164, 163, 163);
-    margin-bottom: 18px;
+    margin-bottom: 40px;
 }
 
 .header::after{
@@ -181,14 +202,14 @@
     margin: 15px 0 30px;
 }
 
-button{
-    display: block;
-    width: 160px;
-    height: 60px;
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgb(78, 198, 171);
-    border-radius: 5px;
+.button{
+background-color: rgb(78, 198, 171);
+padding: 20px 47px;
+border-radius: 5px;
+font-family:sans-serif;
+color: rgb(255, 255, 255);
+text-decoration: none;
+    
 }
 .topic{
     float: left;
