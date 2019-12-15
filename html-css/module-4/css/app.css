@@ -5,7 +5,7 @@
 
 
 .container{
-    max-width: 1170px;
+    max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,10 +98,7 @@
       margin: 0 auto 56px;
 }
 
-.galery {
-    max-width: 1136px;
-    margin-left: 31px;
-}
+
 
 .product{
     width: 254px;
@@ -110,12 +107,20 @@
     color:rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 30px;
-    text-decoration: none;
+}
+
+.product img{
+    display: block;
+}
+
+.product:not(:nth-child(4n)){
+    margin-right: 30px;
 }
 
 .name{
     background-color: rgb(50,50,50);
     width: 200px; height: 40px;
+    line-height: 40px;
     
 }
 .name,.price{
@@ -127,12 +132,12 @@
     background-color: rgb(140,140,140);
     width: 54px; height: 40px;
     text-align: center;
+    line-height: 40px;
     
 }
 
 .product{
     float: left;
-    margin-right: 30px;
 }
 .product:hover > p{
     background-color: rgb(26, 188, 156);
@@ -169,22 +174,23 @@
 }
 
 .blog{
-    margin-left: 15px;
-}
+    list-style-type:  none;margin-bottom: 46px;
 
-.blog div{
-    max-width: 350px;
 }
-
 .blog p {
     text-align: left;
     font-family: sans-serif;
+    
 }
 
 .header{
     font-size: 18px;
     color: rgb(142, 140, 140);
     margin-bottom: 16px;
+}
+
+.topic p{
+    width: 350px;
 }
 
 .some_text{
@@ -203,17 +209,24 @@
 }
 
 .button{
+display: block;
 background-color: rgb(78, 198, 171);
-padding: 20px 47px;
+width: 160px;
+height: 52px;
 border-radius: 5px;
 font-family:sans-serif;
+font-size: 16px;
 color: rgb(255, 255, 255);
 text-decoration: none;
-    
+text-align: center;
+line-height:52px;
 }
 .topic{
     float: left;
-    margin: 0 15px  46px;
+}
+
+.topic:not(:last-child){
+    margin-right: 30px;
 }
 
 .clearfix::after {
