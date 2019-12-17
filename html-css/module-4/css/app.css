@@ -148,8 +148,12 @@
     clear: both;
 }
 
-.product:nth-of-type(n+5){
-    margin-bottom: 106px;
+.product:nth-last-child(-n + 4){
+    margin-bottom: 0;
+}
+
+.new-item{
+    padding-bottom: 106px;
 }
 
 
