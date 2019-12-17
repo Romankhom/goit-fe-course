@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-section{
+    padding: 42px 0;
+    margin-bottom: 38px;
+ 
+}
+
+.home-logo {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    font-family: roboto;
+    font-size: 30px;
+    color: black;
+    padding-left: 30px;
+        
+}
+
+.logo::first-letter{
+    color: rgb(0, 128, 0);
+}
+.logo{
+    float: left;
+}
+
+.menu{
+    width: 505px;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-right: 34px;
+    padding: 0;
+    float: right;
+}
+
+.menu li:not(:last-child){
+    margin-right: 34px;
+}
+
+.menu-item a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.menu li {
+    float: left;
+}
+.menu-item-link{
+    display: block;
+}
+
+.menu-item-link:hover{
+    color: green
+}
+
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.slider{
+    width: 1110px;
+    height: 600px;
+    position: relative;
+    opacity: 1;
+
+}
+.slider-ctrl{
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+
+}
+.slider-prev{
+    left: 0;
+}
+
+.slider-next{
+    right: 0;
+}
+
+.slides{
+    margin: o;
+    padding: 0;
+    list-style: none;
+}
+
+.preview{
+    position: relative;
+}
+
+.slider:hover {
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
+
+.preview-img{
+    height: 600px;
+    object-fit: cover;
+}
+
+.preview-dscr1{
+    position: absolute;
+    top: 220px;
+    left: 190px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.preview-dscr2{
+    position: absolute;
+    top: 300px;
+    left: 190px;
+    color: white;
+    font-size: 18px;
+}
+
+.title {
+    color: black;
+    font-size: 48px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: rgb(81,81,81);
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 32px;
+}
+  
+.title::after{
+      content: '';
+      display: block;
+      width: 164px;
+      height: 8px;
+      background-color: rgb(26,188,156);
+      margin: 0 auto 56px;
+}
+
+.market{
+    width: 1110px;
+    background-color: #e9f0fd;
+}
+
+.product{
+    max-width: 254px;
+    font-family: roboto;
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    list-style-type: none;
+    position: relative;
+}
+
+.object:hover{
+    -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+.product img{
+    display: block;
+}
+
+.product:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+
+.name{
+    background-color: rgb(50,50,50);
+    width: 200px; height: 40px;
+    line-height: 40px;
+    
+}
+.name,.price{
+    float: left;
+}
+
+
+.price{
+    background-color: rgb(140,140,140);
+    width: 54px; height: 40px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.product{
+    float: left;
+}
+.product:hover > p{
+    background-color: rgb(26, 188, 156);
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ button{
+    background-color: #323232;
+    border: size 0;
+}
+.choice{
+    position: absolute;
+    z-index: 2;
+    top:60px;
+    left: 46px;
+    display: none;
+}
+
+.product:hover > .choice{
+    display: block;
+}
+
+footer{
+    background: #323232;
+    min-height: 88px;
+    text-align: center;
+}
+
+.info{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.author{
+    
+    position: absolute;
+    line-height: 88px;
+}
+.author:not(:first-child)::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: whitesmoke;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -5px;
+    
+}
+
+.privacy{
+    left: 355px;
+}
+
+.copyright{
+    right: 365px;
+}
+
+ 
+
+
+
+
