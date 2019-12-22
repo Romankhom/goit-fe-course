@@ -4,6 +4,7 @@
 }
 
 .container{
+    width: 1110px;
      margin-left: auto;
     margin-right: auto;
 }
@@ -21,7 +22,6 @@
     font-family: roboto;
     font-size: 30px;
     color: black;
-    padding-left: 30px;
 }
 
 .logo::first-letter{
@@ -73,6 +73,7 @@
 .slider{
     height: 600px;
     position: relative;
+    
 }
 
 .slider-ctrl{
@@ -80,39 +81,32 @@
     border: none;
     top: 50%;
     transform: translateY(-50%);
-    display: inline-block;
+    display: block;
     width: 104px;
     height: 104px;
     background-color: #1abc9c;
     z-index: 2;
+    opacity: 80%;
 }
 
 .slider-prev{
-    left: 30px;
+    background-image: url("image/slider/l_arrow.png");
+    left: 130px;
 }
 
-.slider-next{
-    right: 30px;
+.slider-next {
+    background-image: url("image/slider/r_arrow.png");
+    right: 130px;    
 }
 
 .slides{
-    margin: o;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.arrow{
-    color: white;
-    
-}
-
 .preview{
     position: relative;
-}
-
-.slider:hover {
-    -webkit-filter: brightness(40%);
-    filter: brightness(40%);
 }
 
 .preview-img{
@@ -123,7 +117,7 @@
 .preview-dscr1{
     position: absolute;
     top: 220px;
-    left: 220px;
+    left: 300px;
     color: white;
     font-family: sans-serif;
     font-size: 44px;
@@ -133,13 +127,12 @@
 .preview-dscr2{
     position: absolute;
     top: 300px;
-    left: 220px;
+    left: 300px;
     color: white;
     font-size: 18px;
 }
 
 .title {
-    color: black;
     font-size: 48px;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -155,12 +148,13 @@
       width: 164px;
       height: 8px;
       background-color: rgb(26,188,156);
-      margin: 0 auto 56px;
+      margin: 0 auto;
 }
 
 .market{
    
     background-color: #e9f0fd;
+    padding-bottom: 100px;
 }
 
 .product{
@@ -169,7 +163,7 @@
     font-size: 18px;
     color:rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 100px;
+    
     list-style-type: none;
     position: relative;
     float: left;
@@ -177,12 +171,13 @@
 }
 
 .galery{
-    padding-left: 30px;
+    margin-top: 56px;
+    
 }
 
 .object:hover{
     -webkit-filter: brightness(40%);
-  filter: brightness(40%);
+    filter: brightness(40%);
 }
 
 .product img{
@@ -190,7 +185,7 @@
 }
 
 .product:not(:nth-child(4n)){
-    margin-right: 90px;
+    margin-right: 30px;
 }
 
 .name{
@@ -231,33 +226,33 @@ button{
     top:60px;
     left: 46px;
     right: 46px;
-    display: block;
+    display: none;
     opacity: 0;
 }
 
 .heart{
     width: 50px;
     height: 50px;
-    background-image: url(image/icon/heart.png);
+    background-image: url("image/icon/heart.png");
 }
 
 .change{
     width: 50px;
     height: 50px;
-    background-image: url(image/icon/arrow.png);
+    background-image: url("image/icon/arrow.png");
 }
 
 .clock{
     width: 50px;
     height: 50px;
-    background-image: url(image/icon/clock.png);
+    background-image: url("image/icon/clock.png");
     
 }
 
 .buy{
     width: 160px;
     height: 50px;
-    background-image: url(image/icon/BUTTON_buy_it.png);
+    background-image: url("image/icon/BUTTON_buy_it.png");
     
 }
 .product:hover > .choice{
@@ -266,11 +261,25 @@ button{
 
 }
 
-button:hover{
+.heart:hover{
     opacity: 0.75;
     background-color: #1abc9c;
 }
 
+.change:hover{
+    opacity: 0.75;
+    background-color: #1abc9c;
+}
+
+.clock:hover{
+    opacity: 0.75;
+    background-color: #1abc9c;
+}
+
+.buy:hover{
+    opacity: 0.75;
+    background-color: #1abc9c;
+}
 footer{
     background: #323232;
     min-height: 88px;
@@ -306,11 +315,11 @@ footer{
 }
 
 .privacy{
-    left: 470px;
+    left: 355px;
 }
 
 .copyright{
-    right: 485px;
+    right: 365px;
 }
 
  
