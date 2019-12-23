@@ -90,12 +90,12 @@
 }
 
 .slider-prev{
-    background-image: url("image/slider/l_arrow.png");
+    background-image: url("../image/slider/l_arrow.png");
     left: 130px;
 }
 
 .slider-next {
-    background-image: url("image/slider/r_arrow.png");
+    background-image: url("../image/slider/r_arrow.png");
     right: 130px;    
 }
 
@@ -139,7 +139,7 @@
     color: rgb(81,81,81);
     text-align: center;
     padding-top: 100px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
   
 .title::after{
@@ -163,8 +163,7 @@
     font-size: 18px;
     color:rgb(255, 255, 255);
     text-transform: uppercase;
-    
-    list-style-type: none;
+    list-style: none;
     position: relative;
     float: left;
     
@@ -221,38 +220,57 @@ button{
 }
 
 .choice{
-    position: absolute;
-    z-index: 2;
-    top:60px;
-    left: 46px;
-    right: 46px;
-    display: none;
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 234px;
+    height: 231px;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.549);
+    cursor: pointer;
 }
 
+.choice-item{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   
+}
+
+.choice-item li{
+    float: right;
+}
+
+.btn-item:not(:first-child){
+    margin-right: 8px;
+}
+
+.btn-item button{
+    width: 48px;
+    height: 48px;
+}
 .heart{
-    width: 50px;
-    height: 50px;
-    background-image: url("image/icon/heart.png");
+   background-image: url("../image/icon/heart.png");
 }
 
 .change{
-    width: 50px;
-    height: 50px;
-    background-image: url("image/icon/arrow.png");
+    background-image: url("../image/icon/arrow.png");
 }
 
 .clock{
-    width: 50px;
-    height: 50px;
-    background-image: url("image/icon/clock.png");
+    background-image: url("../image/icon/clock.png");
     
 }
 
 .buy{
     width: 160px;
     height: 50px;
-    background-image: url("image/icon/BUTTON_buy_it.png");
+    background-image: url("../image/icon/BUTTON_buy_it.png");
     
 }
 .product:hover > .choice{
@@ -261,67 +279,26 @@ button{
 
 }
 
-.heart:hover{
-    opacity: 0.75;
+button:hover{
     background-color: #1abc9c;
+    cursor: pointer;
 }
 
-.change:hover{
-    opacity: 0.75;
-    background-color: #1abc9c;
-}
-
-.clock:hover{
-    opacity: 0.75;
-    background-color: #1abc9c;
-}
-
-.buy:hover{
-    opacity: 0.75;
-    background-color: #1abc9c;
-}
 footer{
     background: #323232;
     min-height: 88px;
     text-align: center;
 }
 
-.info{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+
+.info p{
     font-size: 16px;
     font-family: sans-serif;
+    display: inline-block;
+    line-height: 88px;
     color: whitesmoke;
 }
-
-.author{
-    
-    position: absolute;
-    line-height: 88px;
-}
-.author:not(:first-child)::before{
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 20px;
-    background-color: whitesmoke;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: -5px;
-    
-}
-
-.privacy{
-    left: 355px;
-}
-
-.copyright{
-    right: 365px;
-}
-
  
 
 
