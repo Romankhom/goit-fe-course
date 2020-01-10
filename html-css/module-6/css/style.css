@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "KaushanScript-Regular";
+    src: url(../font/KaushanScript-Regular.otf)format("otf"); 
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../font/Montserrat-Regular.ttf)format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +25,7 @@
 
 .menu-section{
     padding: 38px 0;
-    margin-bottom: 38px;
+    margin-bottom: 120px;
 }
 
 .home-logo {
@@ -24,23 +38,21 @@
     font-weight: 700;
 }
 
-
-
-.logo{
-    float: left;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .menu{
-    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
     list-style: none;
     font-size: 14px;
-    margin-top: 15px;
     padding: 0;
-    float: right;
-}
-
-.menu li:not(:last-child){
-    margin-right: 58px;
+    
 }
 
 .menu-item a{
@@ -51,9 +63,6 @@
     font-weight: bold;
 }
 
-.menu li {
-    float: left;
-}
 .menu-item-link{
     display: block;
     border-bottom: 3px solid transparent;
@@ -63,33 +72,29 @@
 .menu-item-link:hover{
     border-bottom: 3px solid #f38181;
     color:#f38181;
-    
-
-}
-
-.clearfix::after{
-    display: table;
-    content: '';
-    clear: both;
-}
-
-.info{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#333333;
-    text-align: center;
-    padding-top: 90px;
 }
 
 .our-slogan{
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat-Regular";
     text-transform: uppercase;
+    font-weight: 700;
     color:#333333;
     text-align: center;
     padding-top: 24px;
     padding-bottom: 50px;
 }
+
+.info{
+    font-size: 24px;
+    font-family:"KaushanScript-Regular";
+    color:#333333;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
 .our-slogan::after {
     display: block;
     content: "";
@@ -100,26 +105,59 @@
 
 }
 .info-item{
-    position: relative;
-    width: 350px;
+    width: 330px;
     height: 150px;
     padding-left: 70px;
+    list-style: none;
+
+}
+
+.info-item::before {
+    content: "";
+    display: block;
+    height: 35px;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    left: -60px;
+    top: 35px;
+}
+
+.clock-icon::before{
+    background-image: url(..//image/service_icon/clock-icon.png);
+}
+
+.linegraf-icon::before{
+    background-image: url(..//image/service_icon/linegraf-icon.png);
+}
+
+.computer-icon::before{
+    background-image: url(..//image/service_icon/computer-icon.png);
+}
+
+.book-icon::before{
+    background-image: url(..//image/service_icon/book-icon.png);
+}
+
+.home-icon::before{
+    background-image: url(..//image/service_icon/home-icon.png);
+}
+
+.digital-icon::before{
+    background-image: url(..//image/service_icon/digital-icon.png);
 }
 
 h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 22px;
 }
 
 .info-item>p{
     font-family: serif;
     font-size: 15px;
     color: #b3b3b3;
-}
-
-.info-item:not(:nth-child(3n)){
-    margin-right: 30px;
 }
 
 .service{
@@ -129,7 +167,6 @@ h3{
 }
 
 .list-item{
-    margin:0 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -156,7 +193,6 @@ h3{
 }
 
 .member-photo{
-    position: relative;
     margin-bottom: 18px;
 }
 
@@ -188,7 +224,7 @@ h3{
     width: 380px;
     height: 470px;
     background-color: #f4d48b;
-    opacity: 0;
+    z-index: -1;
 }
 
 .social li{
@@ -203,19 +239,18 @@ h3{
    top: 50%;
    left: 175px;
    transform: translate(-50%, -50%);
-   background-color: #fce38a;
+   
 }
- 
-.member-photo:hover {
+
+.team-member:hover .overlay{
+    z-index: 4  ;
+    opacity: 0.75;
     transform: translateX(-5px) translateY(-5px);
     transition-timing-function: linear;
     transition-duration: 200ms;
     
 }
 
-.team-member:hover .overlay{
-    opacity: 0.954;
-}
 
 .company{
     text-decoration: none;
