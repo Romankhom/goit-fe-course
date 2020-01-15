@@ -225,7 +225,7 @@ h3{
     display: inline-block;
     text-decoration: none;
     list-style:none;
-    width: 40px;
+    width: 48px;
    
 }
 
@@ -252,11 +252,27 @@ h3{
     height: 56px;
 }
 
+.twitter::after{
+    display: block;
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: #f38181;
+}
+
 .pinterest{
     background-image: url(../image/icon/pinterest.png);
     display: inline-block;
-    width: 56px;
+    width: 58px;
     height: 56px;
+}
+
+.pinterest::after{
+    display: block;
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: #f38181;
 }
 
 .insta{
@@ -264,6 +280,14 @@ h3{
     display: inline-block;
     width: 56px;
     height: 56px;
+}
+
+.insta::after{
+    display: block;
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: #f38181;
 }
 
 .team-member:hover .overlay{
