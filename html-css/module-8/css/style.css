@@ -41,6 +41,7 @@
 }
 
 .container{
+    width: 320px;
     margin-bottom: 110px;
 }
 
@@ -71,7 +72,7 @@
 }
 
 .enter, .registr{
-    display: inline-block;
+    display:block;
     text-transform: capitalize;
     font-size: 14px;
     color: #ffffff;
@@ -87,6 +88,20 @@
     padding: 10px 18px;
     border-radius: 18px;
     border: 2px solid #ffffff;  
+}
+
+.enter, 
+.item-link{
+    border-bottom: 3px solid transparent;
+}
+
+.enter:hover,
+.item-link:hover{
+    border-bottom: 3px solid #6f7a70;
+}
+
+.registr:hover{
+    background-color: #590c7c;
 }
 
 .slogan{
@@ -105,7 +120,7 @@
     font-family: "Roboto";
     font-weight: 300;
     text-align: center;
-    padding: 0 30px 20px;
+    margin: 0 30px 20px;
 }
 
 .new-friend{
@@ -120,6 +135,7 @@
     font-family: "Montserrat";
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
 }
 
 .partners{
@@ -127,6 +143,7 @@
     padding-bottom: 58px;
 }
 .container-1{
+        width: 320px;
         margin: 0 auto;
     
 }
@@ -152,7 +169,6 @@
 
 .partner-choice-item{
     width: 236px;
-    height: 240px;
 }
 
 .partner-photo{
@@ -170,6 +186,7 @@
     position: relative;
     left: 145px;
     top: 130px;
+    background-position: center;
     border-radius: 100%;
     border: 4px solid #ffffff;
 }
@@ -224,8 +241,13 @@
     border-radius: 20px;
     background-color: #ffffff;
     border: 2px solid #ff4e50;
+    cursor: pointer;
 }
 
+.new-friend:hover,
+.other-btn:hover{
+    background-color: #590c7c;
+}
 
 
    

@@ -1,45 +1,69 @@
 
-*{
-    margin: 0;
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dancing-script-v13-latin-regular.eot'); 
+    src: local(''),
+         url('../fonts/dancing-script-v13-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/dancing-script-v13-latin-regular.woff2') format('woff2'), 
+         url('../fonts/dancing-script-v13-latin-regular.woff') format('woff'), 
+         url('../fonts/dancing-script-v13-latin-regular.ttf') format('truetype'), 
+         url('../fonts/dancing-script-v13-latin-regular.svg#DancingScript') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.eot'); 
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'), 
+         url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'),
+         url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.eot'); 
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), 
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), 
+         url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), 
+         url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Ma Shan Zheng';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ma-shan-zheng-v5-latin-regular.eot'); 
+    src: local('Ma Shan Zheng Regular'), local('MaShanZheng-Regular'),
+         url('../fonts/ma-shan-zheng-v5-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/ma-shan-zheng-v5-latin-regular.woff2') format('woff2'), 
+         url('../fonts/ma-shan-zheng-v5-latin-regular.woff') format('woff'), 
+         url('../fonts/ma-shan-zheng-v5-latin-regular.ttf') format('truetype'), 
+         url('../fonts/ma-shan-zheng-v5-latin-regular.svg#MaShanZheng') format('svg'); 
+}
+
+*, 
+*:after, 
+*:before {
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-@font-face {
-    font-family: "Dancingscript";
-    src: url("../font/dancing-script-v13-latin-regular.woff") format("woff");
-    src: url('../font/dancing-scrpt-v13-latin-regular.woff2') format("woff2");
-    src: url("../font/dancing-script-v13-latin-regular.ttf")  format("ttf")
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "Montserrat";
-    src: url('../font/montserrat-subrayada-v9-latin-regular.woff') format(woff);
-    src: url('../font/montserrat-subrayada-v9-latin-regular.woff2') format(woff2);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Ma-shan-zheng";
-    src: url('../font/ma-shan-zheng-v5-latin-regular.woff') format(woff);
-    src: url('../font/ma-shan-zheng-v5-latin-regular.woff2') format(woff2);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url('../font/roboto-slab-v10-latin-regular.woff') format(woff);
-    src: url('../font/roboto-slab-v10-latin-regular.woff2') format(woff2);
-    font-weight: normal;
-    font-style: normal;
-}
 
 .container{
-    width: 1400px;
-     margin-left: auto;
+    max-width: 940px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -51,7 +75,7 @@
 
 .home-logo {
     display: block;
-    font-family: Kaushan script;
+    font-family: "Dancing Script";
     font-style: italic;
     text-decoration: none;
     list-style: none;
@@ -59,6 +83,7 @@
     letter-spacing: 1px;
     line-height: 41px;
     color: #fed136;
+    font-weight: 700;
 }
 
 .navigation {
@@ -66,8 +91,8 @@
     justify-content: space-between;
     align-items: center;
     width: 940px;
-    margin: 0 230px 0;
-}
+
+}    
 
 .menu{
     display: flex;
@@ -81,7 +106,6 @@
 .menu-item a{
     line-height: 41px;
     color: #222222;
-    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     font-family:"Montserrat";
@@ -100,8 +124,9 @@ h2 {
     text-transform: uppercase;
     font-weight:700;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     letter-spacing: -1px;
+    margin-bottom: 60px;
 
 }
 
@@ -112,24 +137,23 @@ h2 {
 
 .info{
     display: block;
-    font-family:"Ma-shan-zheng";
+    font-family:"Ma shan zheng";
     text-transform: none;
     font-size: 16px;
     color: #777777;
     font-weight: 400;
     font-style: italic;
+    letter-spacing: 3px;
 }
 
 .list-item{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 50px 230px 0;
 }
 
 .info-item{
     width: 292px;
-    height: 230px;
     list-style: none;
 
 }
@@ -137,6 +161,7 @@ h2 {
 .info-item::before {
     content: "";
     display: block;
+    width: 66px;
     height: 66px;
     background-repeat: no-repeat;
     position: relative;
@@ -144,19 +169,26 @@ h2 {
     background-position: center;
     margin-bottom: 30px;
     background-color: #ffffff;
+    left: 115px;
     
 }
 
 .basket-icon::before{
     background-image: url(..//image/service_icon/Icon-Basket.png);
+    border: 2px solid #fed136;
+    border-radius: 100%;
 }
 
 .laptop-icon::before{
     background-image: url(..//image/service_icon/Icon-Laptop.png);
+    border: 2px solid #fed136;
+    border-radius: 100%;
 }
 
 .lock-icon::before{
     background-image: url(..//image/service_icon/Icon-Locked.png);
+    border: 2px solid #fed136;
+    border-radius: 100%;
 }
 
 h3 {
@@ -172,10 +204,8 @@ h3 {
     font-size: 14px;
     letter-spacing: 0px;
     color: #777777;
-    font-family: "Ma-shan-zheng";
+    font-family: "Ma shan zheng";
     font-weight: 400;
-    width: 280px;
-    height: 58px;
 }
 
 .our-service{
@@ -183,7 +213,7 @@ h3 {
 }
 
 .contact{
-    padding: 110px 0 80px;
+    padding-top: 110px;
     font-size: 40px;
     letter-spacing: -1px;
     color: #ffffff;
@@ -194,21 +224,21 @@ h3 {
 
 .contact-form{
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 90px 30px;
     background-color: black;
     background-image: url(../image/service_icon/Map\ Image.png);
     background-repeat: no-repeat;
     background-position: right;
+    margin-bottom: 25px;
 }
 
 .input-data{
     display: flex;
     flex-direction: column;
+    display: inline-block;
 }
 
 .data {
-    width: 455px;
+    width: 450px;
     height: 50px;
     font-size: 14px;
     letter-spacing: 0px;
@@ -216,19 +246,25 @@ h3 {
     font-family: "Montserrat";
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.form-massade {
+    display: inline-block;
 }
 
 
 
 .text-field{
-    width: 455px;
-    height: 218px;
+    width: 450px;
+    height: 210px;
     font-size: 14px;
     letter-spacing: 0px;
     color: #bbbbbb;
     font-family: "Montserrat";
     font-weight: 700;
     text-transform: uppercase;
+    padding: 15px;
 }
 
 input:required:valid {
@@ -258,10 +294,16 @@ margin-bottom: 30px;
     font-family: "Montserrat";
     font-weight: 700;
     text-align: center;
-    margin: 0 auto 30px;
+    margin: 0 auto 110px;
     padding: 25px 46px;
     text-transform: uppercase;
     background-color: #fed136;
 
+}
+
+.message-btn:hover{
+    background-color: chocolate;
+    border-radius: 5px;
+    transition: .5s;
 }
 

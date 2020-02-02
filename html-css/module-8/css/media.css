@@ -14,6 +14,7 @@
 
     .container{
         margin-bottom: 215px;
+        width: 768px;
     }
 
     .sign-text{
@@ -31,6 +32,10 @@
 
     }
 
+    .container-1{
+        width: 768px;
+    }
+
     .slogan{
         font-size: 52px;
         margin-bottom: 48px;
@@ -38,7 +43,6 @@
 
     .info{
         font-size: 24px;
-        padding-bottom: 40px;
     }
 
     .new-friend{
@@ -69,6 +73,10 @@
         background-image: url(../image/background/VectorSmartObject.png);
         width: 1440px;    
 
+    }
+
+    .container, .container-1{
+        width: 1440px;
     }
 
     
