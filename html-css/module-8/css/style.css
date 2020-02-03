@@ -36,13 +36,12 @@
     background: url(../image/background/homework-08_Mobile.png);
     background-repeat: no-repeat;
     background-color: #1a1915;  
-    width: 320px;
     margin: auto;
 }
 
 .container{
-    width: 320px;
-    margin-bottom: 110px;
+    width: 300px;
+    margin-bottom: 105px;
 }
 
 .main-link{
@@ -143,7 +142,7 @@
     padding-bottom: 58px;
 }
 .container-1{
-        width: 320px;
+        width: 300px;
         margin: 0 auto;
     
 }

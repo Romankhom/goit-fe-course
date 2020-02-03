@@ -3,7 +3,6 @@
         background: url(../image/background/homework-08_Tablet.png);
         background-repeat: no-repeat;
         background-color: #1a1915;  
-        width: 768px;
         margin: auto;
     }
 
@@ -14,7 +13,7 @@
 
     .container{
         margin-bottom: 215px;
-        width: 768px;
+        width: 748px;
     }
 
     .sign-text{
@@ -33,7 +32,7 @@
     }
 
     .container-1{
-        width: 768px;
+        width: 748px;
     }
 
     .slogan{
@@ -70,13 +69,21 @@
 
 @media (min-width: 940px) {
     .wrapper {
-        background-image: url(../image/background/VectorSmartObject.png);
-        width: 1440px;    
+        background-image: url(../image/background/VectorSmartObject.png);   
 
     }
 
+    .container{
+        margin: 0 auto 215px;
+    }
+
     .container, .container-1{
-        width: 1440px;
+        width: 920px;
+    }
+
+    .partner-choice{
+        flex-wrap: nowrap;
+        padding: 0;
     }
 
     
