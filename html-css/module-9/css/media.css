@@ -1,0 +1,91 @@
+@media (min-width: 768px) {
+    .wrapper {
+        background: url(../image/background/homework-08_Tablet.png);
+        background-repeat: no-repeat;
+        background-color: #1a1915; 
+        margin: auto;
+    }
+
+    .main-link{
+        padding: 50px 0 110px;
+        align-items: center;
+    }
+
+    .promo-title{
+        margin-bottom: 227px;
+        width: 720px;
+    }
+
+    .sign-text{
+        margin: 0;
+        width: 160px;
+        justify-content: space-between;
+    }
+
+    
+
+    .slogan{
+        font-size: 52px;
+        margin-bottom: 48px;
+    }
+
+    .info{
+        font-size: 24px;
+    }
+
+    .new-friend{
+        padding: 15px;
+    }
+
+     
+    .partner-choice{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        list-style: none;
+        padding: 0 70px;
+
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .partner-choice{
+            flex-wrap: wrap;
+        }
+    }
+
+    .other-btn{
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        background-image: url(../image/background/VectorSmartObject.png);
+           
+
+    }
+
+    .container{
+        max-width: 960px;
+    }
+
+    .promo-title, .new-partners{
+        width: 930px;
+    }
+
+    .partner-choice{
+        padding: 0;
+    }
+
+    .partner-choice-item{
+        margin: 0 auto;
+    }
+
+    .other-btn{
+        margin-bottom: 74px;
+    }
+
+    
+}
