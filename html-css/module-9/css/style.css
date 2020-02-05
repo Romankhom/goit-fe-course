@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -39,10 +39,6 @@
     margin: auto;
 }
 
-.main-link{
-    padding: 20px 0;
-    
-}
 
 .promo-title{
     margin-bottom: 107px;
@@ -134,11 +130,6 @@
     font-weight: 700;
     text-align: center;
     cursor: pointer;
-}
-
-.new-partners{
-        margin: 0 auto;
-    
 }
 
 .meet-partner{
