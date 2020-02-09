@@ -141,19 +141,13 @@
     text-align: center;
 }
 
-.partner-choice{
-    margin-bottom: 70px;
-    list-style: none;
 
-}
 
-.partner-choice-item{
+.partner{
     margin: 0 auto 60px;
-}
-
-.partner-choice-item{
     width: 236px;
 }
+
 
 .partner-photo{
     display: block;
@@ -161,7 +155,7 @@
     border-radius: 100%;
 }
 
-.partner-choice-item::before{
+.partner::before{
     content: "";
     display: inline-block;
     width: 32px;
